@@ -1,0 +1,1082 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/test_yolo_ultra.webp",
+    "query_image_sha256": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96",
+    "width": 800,
+    "height": 800,
+    "processed_at": "2026-02-25T15:47:05.075826+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.78,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "name"
+  },
+  "summary": {
+    "box_count": 7,
+    "matched_box_count": 7,
+    "review_flag_count": 6,
+    "variant_count": 5,
+    "variant_counts": [
+      {
+        "variant_key": "ultra milk susu uht mocca 200ml",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "count": 2,
+        "sku_ids": [
+          "b2c31f17-24a7-5277-90ff-b691472ff621",
+          "d52698ed-fe38-581f-92ad-dba796ce3a0d"
+        ]
+      },
+      {
+        "variant_key": "ultra milk uht cokelat 250ml",
+        "name": "Ultra Milk UHT Cokelat 250ml",
+        "count": 2,
+        "sku_ids": [
+          "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+          "b00c2aab-ea10-56f2-a386-58f9e32736f6"
+        ]
+      },
+      {
+        "variant_key": "ultra milk caramel 200ml",
+        "name": "Ultra Milk Caramel 200ml",
+        "count": 1,
+        "sku_ids": [
+          "fae1e1cf-e70f-5182-9f83-47e5af792cac"
+        ]
+      },
+      {
+        "variant_key": "ultra milk stroberi 125ml",
+        "name": "Ultra Milk Stroberi 125ml",
+        "count": 1,
+        "sku_ids": [
+          "8881808b-7db6-5fa8-b9f5-f82d49625c34"
+        ]
+      },
+      {
+        "variant_key": "ultra milk susu uht taro 200ml",
+        "name": "Ultra Milk Susu UHT Taro 200ml",
+        "count": 1,
+        "sku_ids": [
+          "3f3e259d-8341-5077-bf0c-bbd973f85e3f"
+        ]
+      }
+    ],
+    "sku_counts": [
+      {
+        "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+        "name": "Ultra Milk Susu UHT Taro 200ml",
+        "count": 1
+      },
+      {
+        "sku": "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+        "name": "Ultra Milk UHT Cokelat 250ml",
+        "count": 1
+      },
+      {
+        "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+        "name": "Ultra Milk Stroberi 125ml",
+        "count": 1
+      },
+      {
+        "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+        "name": "Ultra Milk UHT Cokelat 250ml",
+        "count": 1
+      },
+      {
+        "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "count": 1
+      },
+      {
+        "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "count": 1
+      },
+      {
+        "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+        "name": "Ultra Milk Caramel 200ml",
+        "count": 1
+      }
+    ]
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_annotated.webp",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": [
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_000",
+      "bbox": {
+        "x1": 410,
+        "y1": 317,
+        "x2": 800,
+        "y2": 486
+      },
+      "yolo_confidence": 0.9541150331497192,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_000.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8628154,
+          "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+          "name": "Ultra Milk Susu UHT Taro 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+            "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+            "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8628154,
+            "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+            "name": "Ultra Milk Susu UHT Taro 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+              "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.8533281,
+            "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+            "name": "Ultra Milk UHT Cokelat 250ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.84355444,
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.8264595,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8628154,
+        "raw_top2_score": 0.8533281,
+        "margin": 0.009487299999999976,
+        "review_flag": true,
+        "review_reason": "margin_below_threshold",
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+        "name": "Ultra Milk Susu UHT Taro 200ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_001",
+      "bbox": {
+        "x1": 1,
+        "y1": 310,
+        "x2": 407,
+        "y2": 486
+      },
+      "yolo_confidence": 0.9536340832710266,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_001.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.861815,
+          "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+          "name": "Ultra Milk Stroberi 125ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+            "image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+            "crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000",
+            "point_key": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283:e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000",
+            "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+            "matched_crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.861815,
+            "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+            "name": "Ultra Milk Stroberi 125ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+              "image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+              "crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000",
+              "point_key": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283:e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000",
+              "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+              "matched_crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.83812153,
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.8342943,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.82287925,
+            "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+            "name": "Ultra Milk Caramel 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.8214785,
+            "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+            "name": "Ultra Milk UHT Cokelat 250ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.861815,
+        "raw_top2_score": 0.83812153,
+        "margin": 0.023693469999999994,
+        "review_flag": true,
+        "review_reason": "margin_below_threshold",
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+        "name": "Ultra Milk Stroberi 125ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_002",
+      "bbox": {
+        "x1": 0,
+        "y1": 484,
+        "x2": 410,
+        "y2": 643
+      },
+      "yolo_confidence": 0.951007068157196,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_002.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.6812119,
+          "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+          "name": "Ultra Milk Susu UHT Mocca 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.6812119,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.67460907,
+            "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+            "name": "Ultra Milk UHT Cokelat 250ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_005",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_005",
+              "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_005.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_005",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_005.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_005.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.67380476,
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "name": "Ultramilk Full Cream 125ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006",
+              "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.65590376,
+            "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+            "name": "Ultra Milk Caramel 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.6812119,
+        "raw_top2_score": 0.67460907,
+        "margin": 0.0066028299999999485,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_003",
+      "bbox": {
+        "x1": 412,
+        "y1": 130,
+        "x2": 797,
+        "y2": 318
+      },
+      "yolo_confidence": 0.9483036994934082,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_003.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8684083,
+          "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+          "name": "Ultra Milk UHT Cokelat 250ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+            "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+            "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8684083,
+            "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+            "name": "Ultra Milk UHT Cokelat 250ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.8667101,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.84925514,
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.83888435,
+            "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+            "name": "Ultra Milk Susu UHT Taro 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+              "sku": "3f3e259d-8341-5077-bf0c-bbd973f85e3f",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_002.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.82854724,
+            "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+            "name": "Ultra Milk Caramel 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8684083,
+        "raw_top2_score": 0.8667101,
+        "margin": 0.001698199999999983,
+        "review_flag": true,
+        "review_reason": "margin_below_threshold",
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "b00c2aab-ea10-56f2-a386-58f9e32736f6",
+        "name": "Ultra Milk UHT Cokelat 250ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_004",
+      "bbox": {
+        "x1": 410,
+        "y1": 484,
+        "x2": 799,
+        "y2": 641
+      },
+      "yolo_confidence": 0.9465721845626831,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_004.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.85450125,
+          "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+          "name": "Ultra Milk Caramel 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+            "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+            "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+            "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+            "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+            "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.85450125,
+            "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+            "name": "Ultra Milk Caramel 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.82201946,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.81954896,
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "name": "Ultramilk Full Cream 125ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006",
+              "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_006.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.85450125,
+        "raw_top2_score": 0.82201946,
+        "margin": 0.032481789999999955,
+        "review_flag": true,
+        "review_reason": "margin_below_threshold",
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+        "name": "Ultra Milk Caramel 200ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_005",
+      "bbox": {
+        "x1": 1,
+        "y1": 114,
+        "x2": 413,
+        "y2": 315
+      },
+      "yolo_confidence": 0.9366090893745422,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_005.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8719547,
+          "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+          "name": "Ultra Milk Susu UHT Mocca 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+            "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8719547,
+            "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8719547,
+        "raw_top2_score": 0.77954674,
+        "margin": 0.09240795999999996,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "d52698ed-fe38-581f-92ad-dba796ce3a0d",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_006",
+      "bbox": {
+        "x1": 748,
+        "y1": 637,
+        "x2": 800,
+        "y2": 700
+      },
+      "yolo_confidence": 0.30040207505226135,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_ultra_663e68e2/query_crops/663e68e2c56aa195bffe90159c11f5d091547f8a6ebec249965f6b5bbeeccc96_006.webp",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.48110253,
+          "sku": "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+          "name": "Ultra Milk UHT Cokelat 250ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+            "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+            "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001",
+            "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001",
+            "sku": "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+            "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.48110253,
+            "sku": "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+            "name": "Ultra Milk UHT Cokelat 250ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001",
+              "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001",
+              "sku": "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.4345957,
+            "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+            "name": "Ultra Milk Stroberi 125ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+              "image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+              "crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002",
+              "point_key": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283:e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002",
+              "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+              "matched_crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.48110253,
+        "raw_top2_score": 0.4345957,
+        "margin": 0.04650683,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 23
+      },
+      "assignment": {
+        "sku": "6ed7ee7d-b4c0-51b8-8d6b-015eefd5c4f3",
+        "name": "Ultra Milk UHT Cokelat 250ml",
+        "status": "matched_review_flag"
+      }
+    }
+  ]
+}

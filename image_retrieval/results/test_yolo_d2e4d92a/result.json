@@ -1,0 +1,437 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/test_yolo.png",
+    "query_image_sha256": "d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0",
+    "width": 1947,
+    "height": 1377,
+    "processed_at": "2026-02-25T15:25:23.962535+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.78,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "sku"
+  },
+  "summary": {
+    "box_count": 4,
+    "matched_box_count": 4,
+    "review_flag_count": 2,
+    "variant_count": 3,
+    "sku_counts": [
+      {
+        "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+        "name": "Indomie Kari Ayam 75g",
+        "count": 2
+      },
+      {
+        "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+        "name": "Indomie Soto Ayam 75g",
+        "count": 1
+      },
+      {
+        "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+        "name": "Indomie Mi Goreng Original 85g",
+        "count": 1
+      }
+    ]
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/query_annotated.png",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": [
+    {
+      "query_crop_id": "d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_000",
+      "bbox": {
+        "x1": 1047,
+        "y1": 743,
+        "x2": 1938,
+        "y2": 1373
+      },
+      "yolo_confidence": 0.9659163951873779,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/query_crops/d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_000.png",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7127886,
+          "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+          "name": "Indomie Kari Ayam 75g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+            "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+            "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7127886,
+            "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+            "name": "Indomie Kari Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+              "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.69918084,
+            "sku": "380e12a2-08ba-575f-b683-074a07d5ec7d",
+            "name": "Sarimi Kuah Ayam Bawang 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004",
+              "sku": "380e12a2-08ba-575f-b683-074a07d5ec7d",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.6672764,
+            "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+            "name": "Indomie Mi Goreng Original 85g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_005",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_005",
+              "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_005.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_005",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_005.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_005.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.6649507,
+            "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+            "name": "Indomie Soto Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_002",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_002",
+              "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_002.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_002",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_002.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_002.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7127886,
+        "raw_top2_score": 0.69918084,
+        "margin": 0.013607759999999969,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 8
+      },
+      "assignment": {
+        "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+        "name": "Indomie Kari Ayam 75g",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_001",
+      "bbox": {
+        "x1": 1078,
+        "y1": 78,
+        "x2": 1946,
+        "y2": 746
+      },
+      "yolo_confidence": 0.9657910466194153,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/query_crops/d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_001.png",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8220915,
+          "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+          "name": "Indomie Soto Ayam 75g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+            "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+            "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.jpg"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.jpg",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8220915,
+            "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+            "name": "Indomie Soto Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+              "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8220915,
+        "raw_top2_score": 0.7139685,
+        "margin": 0.10812299999999997,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 8
+      },
+      "assignment": {
+        "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+        "name": "Indomie Soto Ayam 75g",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_002",
+      "bbox": {
+        "x1": 7,
+        "y1": 721,
+        "x2": 1057,
+        "y2": 1373
+      },
+      "yolo_confidence": 0.9556357860565186,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/query_crops/d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_002.png",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8024032,
+          "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+          "name": "Indomie Kari Ayam 75g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+            "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+            "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.jpg"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.jpg",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8024032,
+            "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+            "name": "Indomie Kari Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+              "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8024032,
+        "raw_top2_score": 0.7300607,
+        "margin": 0.07234249999999998,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 8
+      },
+      "assignment": {
+        "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+        "name": "Indomie Kari Ayam 75g",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_003",
+      "bbox": {
+        "x1": 1,
+        "y1": 2,
+        "x2": 1084,
+        "y2": 732
+      },
+      "yolo_confidence": 0.9542887806892395,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_yolo_d2e4d92a/query_crops/d2e4d92a3dc78f4f4950df82b01d5eab0dbd897e9fdfce335d25767a0562fbe0_003.png",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7682382,
+          "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+          "name": "Indomie Mi Goreng Original 85g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001",
+            "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001",
+            "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001.jpg"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+            "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001.jpg",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7682382,
+            "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+            "name": "Indomie Mi Goreng Original 85g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001",
+              "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7682382,
+        "raw_top2_score": 0.67959625,
+        "margin": 0.08864194999999997,
+        "review_flag": true,
+        "review_reason": "score_below_threshold",
+        "raw_hits_considered": 8
+      },
+      "assignment": {
+        "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+        "name": "Indomie Mi Goreng Original 85g",
+        "status": "matched_review_flag"
+      }
+    }
+  ]
+}

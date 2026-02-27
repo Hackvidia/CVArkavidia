@@ -1,0 +1,319 @@
+{
+  "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+  "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+  "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.jpg",
+  "crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.json",
+  "image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+  "source": {
+    "input_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/input/4da0988896394480b6b0ecaf084a848c2008.jpg",
+    "filename": "4da0988896394480b6b0ecaf084a848c2008.jpg",
+    "sha256": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+    "width": 726,
+    "height": 726,
+    "processed_at": "2026-02-25T14:42:10.527450+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "image_status": "accepted",
+    "crop_status": "manually_approved",
+    "errors": []
+  },
+  "detection": {
+    "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006",
+    "bbox": {
+      "x1": 200,
+      "y1": 449,
+      "x2": 462,
+      "y2": 632
+    },
+    "yolo_confidence": 0.9587422013282776,
+    "yolo_class": "box",
+    "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.jpg",
+    "openai_inferred": {
+      "name": "Indomie Mi Instan Rasa Soto Mie box",
+      "aliases": [
+        "Indomie Soto Mie instant noodles box",
+        "Indomie Soto Mie carton"
+      ],
+      "attributes": {
+        "brand": "Indomie",
+        "product_type": "instant noodle multipack",
+        "flavor": "Soto Mie (noodle soup)",
+        "packaging": "cardboard carton",
+        "special_marking": "50 years anniversary logo",
+        "language_on_packaging": [
+          "Indonesian"
+        ]
+      },
+      "model": "gpt-5.1-2025-11-13"
+    },
+    "text_match": {
+      "query_text": "Indomie Mi Instan Rasa Soto Mie box Indomie Soto Mie instant noodles box Indomie Soto Mie carton",
+      "embedding_model": "text-embedding-3-small",
+      "top_k": [
+        {
+          "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+          "score": 0.69643956,
+          "payload": {
+            "sku_id": "INDOMIE-KUAH-SOTO-AYAM-75G",
+            "display_name": "Indomie Soto Ayam 75g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Soto Chicken",
+              "variant": "Soto Ayam",
+              "size": "75g"
+            },
+            "aliases": [
+              "indomie soto ayam",
+              "indomie kuah soto",
+              "mi soto ayam",
+              "im soto ayam",
+              "indomie ayam soto"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "2e0fcd52-a015-5411-b28c-24b6d99de383",
+          "score": 0.64614767,
+          "payload": {
+            "sku_id": "MISEDAAP-MIEINSTAN-SOTO-75G",
+            "display_name": "Mie Sedaap Soto 75g",
+            "brand": "Mie Sedaap",
+            "category": "mie",
+            "subcategory": "mie instan",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "soto",
+              "variant": "Soto",
+              "size": "75g"
+            },
+            "aliases": [
+              "mie sedap rasa soto",
+              "mie sedaap soto",
+              "mie sedap soto",
+              "sedap soto",
+              "sedaap soto",
+              "mie sedaap rasa soto",
+              "mie instan sedaap soto"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "8e2ec7ae-f857-5bc0-a634-dbf0e00d5bfe",
+          "score": 0.6281071,
+          "payload": {
+            "sku_id": "INDOMIE-GORENG-RENDANG-91G",
+            "display_name": "Indomie Mi Goreng Rendang 91g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Dry Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Rendang",
+              "variant": "Rendang",
+              "size": "91g"
+            },
+            "aliases": [
+              "indomie rendang",
+              "mi goreng rendang",
+              "im rendang",
+              "indomie goreng rendang"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "7b2ededa-740a-5260-86bc-8681c3ad8eea",
+          "score": 0.6120742,
+          "payload": {
+            "sku_id": "INDOMIE-GORENG-85G",
+            "display_name": "Indomie Mi Goreng Original 85g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Dry Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Fried Noodle",
+              "variant": "Original",
+              "size": "85g"
+            },
+            "aliases": [
+              "indomie goreng",
+              "indomie goreng original",
+              "mi goreng indomie",
+              "im goreng",
+              "indomie grg"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+          "score": 0.6098139,
+          "payload": {
+            "sku_id": "INDOMIE-GORENG-AYAM-GEPREK-90G",
+            "display_name": "Indomie Mi Goreng Ayam Geprek 90g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Dry Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Ayam Geprek",
+              "variant": "Ayam Geprek",
+              "size": "90g"
+            },
+            "aliases": [
+              "indomie ayam geprek",
+              "mi goreng ayam geprek",
+              "im geprek",
+              "indomie geprek"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        }
+      ],
+      "top1_score": 0.69643956,
+      "top2_score": 0.64614767,
+      "margin": 0.050291890000000006
+    },
+    "assignment": {
+      "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+      "label_status": "manually_approved",
+      "reason": "human_selected_candidate_1",
+      "reviewed_at": "2026-02-25T14:47:08.197590+00:00",
+      "review_source": "terminal",
+      "review_selected_candidate_rank": 1,
+      "review_selected_candidate": {
+        "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+        "score": 0.69643956,
+        "payload": {
+          "sku_id": "INDOMIE-KUAH-SOTO-AYAM-75G",
+          "display_name": "Indomie Soto Ayam 75g",
+          "brand": "Indomie",
+          "category": "Instant Noodles",
+          "subcategory": "Soup Noodles",
+          "price_band": "cheap",
+          "attributes": {
+            "flavor": "Soto Chicken",
+            "variant": "Soto Ayam",
+            "size": "75g"
+          },
+          "aliases": [
+            "indomie soto ayam",
+            "indomie kuah soto",
+            "mi soto ayam",
+            "im soto ayam",
+            "indomie ayam soto"
+          ],
+          "base_unit": "pcs",
+          "uom_conversions": [
+            {
+              "unit": "dus",
+              "to_base_factor": 40
+            },
+            {
+              "unit": "karton",
+              "to_base_factor": 40
+            }
+          ]
+        }
+      }
+    },
+    "crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_006.json",
+    "clip": {
+      "index_status": "pending",
+      "qdrant_point_id": null,
+      "error": null
+    }
+  },
+  "image_annotation": {
+    "labeled_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg",
+    "rendered": true
+  },
+  "db_metadata": {
+    "sku_id": "INDOMIE-KUAH-SOTO-AYAM-75G",
+    "display_name": "Indomie Soto Ayam 75g",
+    "brand": "Indomie",
+    "category": "Instant Noodles",
+    "subcategory": "Soup Noodles",
+    "price_band": "cheap",
+    "attributes": {
+      "flavor": "Soto Chicken",
+      "variant": "Soto Ayam",
+      "size": "75g"
+    },
+    "aliases": [
+      "indomie soto ayam",
+      "indomie kuah soto",
+      "mi soto ayam",
+      "im soto ayam",
+      "indomie ayam soto"
+    ],
+    "base_unit": "pcs",
+    "uom_conversions": [
+      {
+        "unit": "dus",
+        "to_base_factor": 40
+      },
+      {
+        "unit": "karton",
+        "to_base_factor": 40
+      }
+    ]
+  }
+}

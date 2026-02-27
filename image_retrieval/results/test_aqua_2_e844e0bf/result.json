@@ -1,0 +1,40 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/test_aqua_2.png",
+    "query_image_sha256": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58",
+    "width": 412,
+    "height": 383,
+    "processed_at": "2026-02-26T05:17:43.150567+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.5,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "name",
+    "yolo_min_confidence": 0.6
+  },
+  "summary": {
+    "box_count": 0,
+    "filtered_out_low_conf_count": 2,
+    "matched_box_count": 0,
+    "review_flag_count": 0,
+    "variant_count": 0,
+    "variant_counts": [],
+    "sku_counts": []
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_2_e844e0bf/query_annotated.png",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_2_e844e0bf/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_2_e844e0bf/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": []
+}

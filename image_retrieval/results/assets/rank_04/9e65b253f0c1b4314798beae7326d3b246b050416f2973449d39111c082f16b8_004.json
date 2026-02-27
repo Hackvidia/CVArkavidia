@@ -1,0 +1,280 @@
+{
+  "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+  "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004",
+  "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.jpg",
+  "crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.json",
+  "image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+  "source": {
+    "input_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/input/4da0988896394480b6b0ecaf084a848c2008.jpg",
+    "filename": "4da0988896394480b6b0ecaf084a848c2008.jpg",
+    "sha256": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+    "width": 726,
+    "height": 726,
+    "processed_at": "2026-02-25T14:42:10.527450+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "image_status": "accepted",
+    "crop_status": "manually_approved",
+    "errors": []
+  },
+  "detection": {
+    "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004",
+    "bbox": {
+      "x1": 0,
+      "y1": 272,
+      "x2": 203,
+      "y2": 466
+    },
+    "yolo_confidence": 0.9634380340576172,
+    "yolo_class": "box",
+    "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.jpg",
+    "openai_inferred": {
+      "name": "Indomie Mi Instan Rasa Ayam Bawang instant noodles",
+      "aliases": [
+        "Indomie Ayam Bawang",
+        "Indomie onion chicken flavour instant noodles"
+      ],
+      "attributes": {
+        "brand": "Indomie",
+        "type": "instant noodles",
+        "flavour": "Ayam Bawang (chicken and onion)",
+        "packaging": "plastic packet",
+        "origin": "Indonesia",
+        "special_marking": "50 years anniversary logo"
+      },
+      "model": "gpt-5.1-2025-11-13"
+    },
+    "text_match": {
+      "query_text": "Indomie Mi Instan Rasa Ayam Bawang instant noodles Indomie Ayam Bawang Indomie onion chicken flavour instant noodles",
+      "embedding_model": "text-embedding-3-small",
+      "top_k": [
+        {
+          "sku": "380e12a2-08ba-575f-b683-074a07d5ec7d",
+          "score": 0.6903888,
+          "payload": {
+            "sku_id": "SARIMI-KUAH-AYAM-BAWANG-75G",
+            "display_name": "Sarimi Kuah Ayam Bawang 75g",
+            "brand": "Sarimi",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Chicken Onion",
+              "variant": "Ayam Bawang",
+              "size": "75g"
+            },
+            "aliases": [
+              "sarimi ayam bawang",
+              "sarimi kuah ayam bawang",
+              "mi sarimi ayam bawang",
+              "sarimie ayam bawang",
+              "sm ayam bawang"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "92090213-b88d-5148-b302-071be045e4b8",
+          "score": 0.6784313,
+          "payload": {
+            "sku_id": "SARIMI-ISI2-AYAM-BAWANG-125G",
+            "display_name": "Sarimi Isi 2 Ayam Bawang 125g",
+            "brand": "Sarimi",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Chicken Onion",
+              "variant": "Isi 2 Ayam Bawang",
+              "size": "125g"
+            },
+            "aliases": [
+              "sarimi isi 2 ayam bawang",
+              "sarimi isi2 ayam bawang",
+              "sarimi 2 ayam bawang",
+              "sarimi double ayam bawang",
+              "sarimie isi 2 ayam bawang"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 24
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 24
+              }
+            ]
+          }
+        },
+        {
+          "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+          "score": 0.67054343,
+          "payload": {
+            "sku_id": "INDOMIE-KUAH-SOTO-AYAM-75G",
+            "display_name": "Indomie Soto Ayam 75g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Soto Chicken",
+              "variant": "Soto Ayam",
+              "size": "75g"
+            },
+            "aliases": [
+              "indomie soto ayam",
+              "indomie kuah soto",
+              "mi soto ayam",
+              "im soto ayam",
+              "indomie ayam soto"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "ebe64b55-5250-5342-a3cb-02e083fcb757",
+          "score": 0.66529787,
+          "payload": {
+            "sku_id": "INDOMIE-KUAH-KALDU-AYAM-70G",
+            "display_name": "Indomie Kaldu Ayam 70g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Chicken Broth",
+              "variant": "Kaldu Ayam",
+              "size": "70g"
+            },
+            "aliases": [
+              "indomie kaldu ayam",
+              "indomie kuah ayam",
+              "mi kaldu ayam",
+              "im kaldu ayam",
+              "indomie ayam kuah"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+          "score": 0.6492592,
+          "payload": {
+            "sku_id": "INDOMIE-GORENG-AYAM-GEPREK-90G",
+            "display_name": "Indomie Mi Goreng Ayam Geprek 90g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Dry Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Ayam Geprek",
+              "variant": "Ayam Geprek",
+              "size": "90g"
+            },
+            "aliases": [
+              "indomie ayam geprek",
+              "mi goreng ayam geprek",
+              "im geprek",
+              "indomie geprek"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        }
+      ],
+      "top1_score": 0.6903888,
+      "top2_score": 0.6784313,
+      "margin": 0.011957500000000065
+    },
+    "assignment": {
+      "sku": "380e12a2-08ba-575f-b683-074a07d5ec7d",
+      "label_status": "manually_approved",
+      "reason": "human_confirmed",
+      "reviewed_at": "2026-02-25T14:45:27.749056+00:00",
+      "review_source": "terminal"
+    },
+    "crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_004.json",
+    "clip": {
+      "index_status": "pending",
+      "qdrant_point_id": null,
+      "error": null
+    }
+  },
+  "image_annotation": {
+    "labeled_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg",
+    "rendered": true
+  },
+  "db_metadata": {
+    "sku_id": "SARIMI-KUAH-AYAM-BAWANG-75G",
+    "display_name": "Sarimi Kuah Ayam Bawang 75g",
+    "brand": "Sarimi",
+    "category": "Instant Noodles",
+    "subcategory": "Soup Noodles",
+    "price_band": "cheap",
+    "attributes": {
+      "flavor": "Chicken Onion",
+      "variant": "Ayam Bawang",
+      "size": "75g"
+    },
+    "aliases": [
+      "sarimi ayam bawang",
+      "sarimi kuah ayam bawang",
+      "mi sarimi ayam bawang",
+      "sarimie ayam bawang",
+      "sm ayam bawang"
+    ],
+    "base_unit": "pcs",
+    "uom_conversions": [
+      {
+        "unit": "dus",
+        "to_base_factor": 40
+      },
+      {
+        "unit": "karton",
+        "to_base_factor": 40
+      }
+    ]
+  }
+}

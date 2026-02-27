@@ -1,0 +1,1159 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/test_aqua.jpg",
+    "query_image_sha256": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6",
+    "width": 700,
+    "height": 700,
+    "processed_at": "2026-02-26T05:15:38.964493+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.5,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "name",
+    "yolo_min_confidence": 0.6
+  },
+  "summary": {
+    "box_count": 14,
+    "filtered_out_low_conf_count": 0,
+    "matched_box_count": 14,
+    "review_flag_count": 4,
+    "variant_count": 1,
+    "variant_counts": [
+      {
+        "variant_key": "aqua air mineral botol 330ml",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "count": 14,
+        "sku_ids": [
+          "f5fba7e8-c05b-5d18-96e1-30d5042a3539"
+        ]
+      }
+    ],
+    "sku_counts": [
+      {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "count": 14
+      }
+    ]
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_annotated.jpg",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": [
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_000",
+      "bbox": {
+        "x1": 298,
+        "y1": 338,
+        "x2": 485,
+        "y2": 462
+      },
+      "yolo_confidence": 0.9546533823013306,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_000.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.779603,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.779603,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.779603,
+        "raw_top2_score": 0.4549742,
+        "margin": 0.32462880000000005,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_001",
+      "bbox": {
+        "x1": 465,
+        "y1": 256,
+        "x2": 684,
+        "y2": 372
+      },
+      "yolo_confidence": 0.9504342675209045,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_001.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7591831,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7591831,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7591831,
+        "raw_top2_score": 0.43442523,
+        "margin": 0.32475787,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_002",
+      "bbox": {
+        "x1": 297,
+        "y1": 549,
+        "x2": 470,
+        "y2": 636
+      },
+      "yolo_confidence": 0.9426094889640808,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_002.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.6153554,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.6153554,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.6153554,
+        "raw_top2_score": 0.38818127,
+        "margin": 0.22717412999999997,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_003",
+      "bbox": {
+        "x1": 296,
+        "y1": 635,
+        "x2": 465,
+        "y2": 700
+      },
+      "yolo_confidence": 0.9415762424468994,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_003.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.44486645,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.44486645,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.44486645,
+        "raw_top2_score": 0.30224094,
+        "margin": 0.14262551,
+        "review_flag": true,
+        "review_reason": "score_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_004",
+      "bbox": {
+        "x1": 127,
+        "y1": 628,
+        "x2": 296,
+        "y2": 700
+      },
+      "yolo_confidence": 0.9401940703392029,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_004.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.45853108,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.45853108,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.4096077,
+            "sku": "aa3362fe-eae6-56b5-87d3-6729376ae634",
+            "name": "Nescafe Kaleng Ice Black 220ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.json",
+              "image_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b",
+              "crop_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_003",
+              "point_key": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b:097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_003",
+              "sku": "aa3362fe-eae6-56b5-87d3-6729376ae634",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_003.jpeg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b",
+              "matched_crop_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_003.jpeg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.jpeg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.45853108,
+        "raw_top2_score": 0.4096077,
+        "margin": 0.04892337999999996,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_005",
+      "bbox": {
+        "x1": 118,
+        "y1": 543,
+        "x2": 294,
+        "y2": 629
+      },
+      "yolo_confidence": 0.9382213354110718,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_005.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.4627275,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.4627275,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.4627275,
+        "raw_top2_score": 0.3809598,
+        "margin": 0.0817677,
+        "review_flag": true,
+        "review_reason": "score_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_006",
+      "bbox": {
+        "x1": 293,
+        "y1": 461,
+        "x2": 469,
+        "y2": 551
+      },
+      "yolo_confidence": 0.9379550218582153,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_006.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.6991983,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.6991983,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.6991983,
+        "raw_top2_score": 0.42366242,
+        "margin": 0.27553588000000007,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_007",
+      "bbox": {
+        "x1": 115,
+        "y1": 454,
+        "x2": 295,
+        "y2": 544
+      },
+      "yolo_confidence": 0.9368191957473755,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_007.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.5574485,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.5574485,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.5574485,
+        "raw_top2_score": 0.35024223,
+        "margin": 0.20720627000000003,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_008",
+      "bbox": {
+        "x1": 108,
+        "y1": 360,
+        "x2": 294,
+        "y2": 455
+      },
+      "yolo_confidence": 0.9340559244155884,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_008.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.6805308,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.6805308,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.6805308,
+        "raw_top2_score": 0.36805934,
+        "margin": 0.31247146,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_009",
+      "bbox": {
+        "x1": 465,
+        "y1": 634,
+        "x2": 646,
+        "y2": 700
+      },
+      "yolo_confidence": 0.9235796332359314,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_009.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.4338334,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.4338334,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.4338334,
+        "raw_top2_score": 0.35438496,
+        "margin": 0.07944843999999995,
+        "review_flag": true,
+        "review_reason": "score_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_010",
+      "bbox": {
+        "x1": 101,
+        "y1": 248,
+        "x2": 303,
+        "y2": 361
+      },
+      "yolo_confidence": 0.9184605479240417,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_010.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7097469,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7097469,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7097469,
+        "raw_top2_score": 0.41774023,
+        "margin": 0.29200666999999997,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_011",
+      "bbox": {
+        "x1": 475,
+        "y1": 459,
+        "x2": 669,
+        "y2": 555
+      },
+      "yolo_confidence": 0.9084459543228149,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_011.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.6141193,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.6141193,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.6141193,
+        "raw_top2_score": 0.35567975,
+        "margin": 0.25843955,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_012",
+      "bbox": {
+        "x1": 472,
+        "y1": 350,
+        "x2": 669,
+        "y2": 465
+      },
+      "yolo_confidence": 0.8852382302284241,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_012.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.70330244,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.70330244,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.70330244,
+        "raw_top2_score": 0.41597128,
+        "margin": 0.28733116,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_013",
+      "bbox": {
+        "x1": 469,
+        "y1": 526,
+        "x2": 658,
+        "y2": 642
+      },
+      "yolo_confidence": 0.7916437387466431,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_aqua_19bde63b/query_crops/19bde63b5a3b95e45fe5ae0fc1fb40fb7800436c6eadc88af7e89e47c1f25ba6_013.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.74702334,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.74702334,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.74702334,
+        "raw_top2_score": 0.47379142,
+        "margin": 0.27323192,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    }
+  ]
+}

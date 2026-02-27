@@ -1,0 +1,278 @@
+{
+  "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+  "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+  "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg",
+  "crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.json",
+  "image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+  "source": {
+    "input_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/input/4da0988896394480b6b0ecaf084a848c2008.jpg",
+    "filename": "4da0988896394480b6b0ecaf084a848c2008.jpg",
+    "sha256": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+    "width": 726,
+    "height": 726,
+    "processed_at": "2026-02-25T14:42:10.527450+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "image_status": "accepted",
+    "crop_status": "auto_accepted",
+    "errors": []
+  },
+  "detection": {
+    "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+    "bbox": {
+      "x1": 316,
+      "y1": 91,
+      "x2": 586,
+      "y2": 270
+    },
+    "yolo_confidence": 0.9686782360076904,
+    "yolo_class": "box",
+    "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg",
+    "openai_inferred": {
+      "name": "Indomie Mi Instan Rasa Kari Ayam",
+      "aliases": [
+        "Indomie Chicken Curry Instant Noodles"
+      ],
+      "attributes": {
+        "type": "instant noodles carton",
+        "flavor": "chicken curry",
+        "brand": "Indomie",
+        "packaging": "cardboard box outer packaging",
+        "language_on_pack": [
+          "Indonesian"
+        ]
+      },
+      "model": "gpt-5.1-2025-11-13"
+    },
+    "text_match": {
+      "query_text": "Indomie Mi Instan Rasa Kari Ayam Indomie Chicken Curry Instant Noodles",
+      "embedding_model": "text-embedding-3-small",
+      "top_k": [
+        {
+          "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+          "score": 0.7921809,
+          "payload": {
+            "sku_id": "INDOMIE-KUAH-KARI-AYAM-75G",
+            "display_name": "Indomie Kari Ayam 75g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Chicken Curry",
+              "variant": "Kari Ayam",
+              "size": "75g"
+            },
+            "aliases": [
+              "indomie kari ayam",
+              "indomie kuah kari",
+              "mi kari ayam",
+              "im kari ayam",
+              "indomie kuah ayam"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "ebe64b55-5250-5342-a3cb-02e083fcb757",
+          "score": 0.7016728,
+          "payload": {
+            "sku_id": "INDOMIE-KUAH-KALDU-AYAM-70G",
+            "display_name": "Indomie Kaldu Ayam 70g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Chicken Broth",
+              "variant": "Kaldu Ayam",
+              "size": "70g"
+            },
+            "aliases": [
+              "indomie kaldu ayam",
+              "indomie kuah ayam",
+              "mi kaldu ayam",
+              "im kaldu ayam",
+              "indomie ayam kuah"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "744abed7-0f43-5315-85b2-d502ea6151d8",
+          "score": 0.684399,
+          "payload": {
+            "sku_id": "INDOMIE-KUAH-SOTO-AYAM-75G",
+            "display_name": "Indomie Soto Ayam 75g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Soto Chicken",
+              "variant": "Soto Ayam",
+              "size": "75g"
+            },
+            "aliases": [
+              "indomie soto ayam",
+              "indomie kuah soto",
+              "mi soto ayam",
+              "im soto ayam",
+              "indomie ayam soto"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+          "score": 0.6609494,
+          "payload": {
+            "sku_id": "INDOMIE-GORENG-AYAM-GEPREK-90G",
+            "display_name": "Indomie Mi Goreng Ayam Geprek 90g",
+            "brand": "Indomie",
+            "category": "Instant Noodles",
+            "subcategory": "Dry Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Ayam Geprek",
+              "variant": "Ayam Geprek",
+              "size": "90g"
+            },
+            "aliases": [
+              "indomie ayam geprek",
+              "mi goreng ayam geprek",
+              "im geprek",
+              "indomie geprek"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        },
+        {
+          "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+          "score": 0.64633775,
+          "payload": {
+            "sku_id": "SARIMIE-KUAH-AYAM-75G",
+            "display_name": "Sarimi Kuah Rasa Ayam 75g",
+            "brand": "Sarimi",
+            "category": "Instant Noodles",
+            "subcategory": "Soup Noodles",
+            "price_band": "cheap",
+            "attributes": {
+              "flavor": "Chicken",
+              "variant": "Kuah Rasa Ayam",
+              "size": "75g"
+            },
+            "aliases": [
+              "sarimi ayam",
+              "sarimi kuah ayam",
+              "mi sarimi ayam",
+              "sarimi rasa ayam",
+              "sarimie ayam"
+            ],
+            "base_unit": "pcs",
+            "uom_conversions": [
+              {
+                "unit": "dus",
+                "to_base_factor": 40
+              },
+              {
+                "unit": "karton",
+                "to_base_factor": 40
+              }
+            ]
+          }
+        }
+      ],
+      "top1_score": 0.7921809,
+      "top2_score": 0.7016728,
+      "margin": 0.09050809999999998
+    },
+    "assignment": {
+      "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+      "label_status": "auto_accepted",
+      "reason": "score_and_margin_threshold_met"
+    },
+    "crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.json",
+    "clip": {
+      "index_status": "pending",
+      "qdrant_point_id": null,
+      "error": null
+    }
+  },
+  "image_annotation": {
+    "labeled_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg",
+    "rendered": true
+  },
+  "db_metadata": {
+    "sku_id": "INDOMIE-KUAH-KARI-AYAM-75G",
+    "display_name": "Indomie Kari Ayam 75g",
+    "brand": "Indomie",
+    "category": "Instant Noodles",
+    "subcategory": "Soup Noodles",
+    "price_band": "cheap",
+    "attributes": {
+      "flavor": "Chicken Curry",
+      "variant": "Kari Ayam",
+      "size": "75g"
+    },
+    "aliases": [
+      "indomie kari ayam",
+      "indomie kuah kari",
+      "mi kari ayam",
+      "im kari ayam",
+      "indomie kuah ayam"
+    ],
+    "base_unit": "pcs",
+    "uom_conversions": [
+      {
+        "unit": "dus",
+        "to_base_factor": 40
+      },
+      {
+        "unit": "karton",
+        "to_base_factor": 40
+      }
+    ]
+  }
+}

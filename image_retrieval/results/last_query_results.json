@@ -1,0 +1,1669 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/test_mineral.jpg",
+    "query_image_sha256": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d",
+    "width": 1080,
+    "height": 1080,
+    "processed_at": "2026-02-26T05:28:30.441878+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.5,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "name",
+    "yolo_min_confidence": 0.6
+  },
+  "summary": {
+    "box_count": 15,
+    "filtered_out_low_conf_count": 5,
+    "matched_box_count": 15,
+    "review_flag_count": 6,
+    "variant_count": 5,
+    "variant_counts": [
+      {
+        "variant_key": "aqua air mineral botol 330ml",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "count": 5,
+        "sku_ids": [
+          "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "f73bcf5b-7c03-589e-8502-4f349839294a"
+        ]
+      },
+      {
+        "variant_key": "vit air mineral botol 200ml",
+        "name": "Vit Air Mineral Botol 200ml",
+        "count": 5,
+        "sku_ids": [
+          "VIT-AIRMINERAL-200ML"
+        ]
+      },
+      {
+        "variant_key": "sarimi kaldu ayam 70g",
+        "name": "Sarimi Kaldu Ayam 70g",
+        "count": 2,
+        "sku_ids": [
+          "680cede4-0969-565e-863b-c4ea3be6d3dc"
+        ]
+      },
+      {
+        "variant_key": "ultra milk susu uht mocca 200ml",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "count": 2,
+        "sku_ids": [
+          "b2c31f17-24a7-5277-90ff-b691472ff621"
+        ]
+      },
+      {
+        "variant_key": "sarimi kuah rasa ayam 75g",
+        "name": "Sarimi Kuah Rasa Ayam 75g",
+        "count": 1,
+        "sku_ids": [
+          "87186e1c-5940-593c-a2e8-2abb81eb52db"
+        ]
+      }
+    ],
+    "sku_counts": [
+      {
+        "sku": "VIT-AIRMINERAL-200ML",
+        "name": "Vit Air Mineral Botol 200ml",
+        "count": 5
+      },
+      {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "count": 4
+      },
+      {
+        "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+        "name": "Sarimi Kaldu Ayam 70g",
+        "count": 2
+      },
+      {
+        "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "count": 2
+      },
+      {
+        "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+        "name": "Sarimi Kuah Rasa Ayam 75g",
+        "count": 1
+      },
+      {
+        "sku": "f73bcf5b-7c03-589e-8502-4f349839294a",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "count": 1
+      }
+    ]
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_annotated.jpg",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": [
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_000",
+      "bbox": {
+        "x1": 427,
+        "y1": 710,
+        "x2": 788,
+        "y2": 893
+      },
+      "yolo_confidence": 0.9556810259819031,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_000.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.80596095,
+          "sku": "VIT-AIRMINERAL-200ML",
+          "name": "Vit Air Mineral Botol 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "sku": "VIT-AIRMINERAL-200ML",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.80596095,
+            "sku": "VIT-AIRMINERAL-200ML",
+            "name": "Vit Air Mineral Botol 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "sku": "VIT-AIRMINERAL-200ML",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.80596095,
+        "raw_top2_score": 0.43943536,
+        "margin": 0.36652559,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "VIT-AIRMINERAL-200ML",
+        "name": "Vit Air Mineral Botol 200ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_001",
+      "bbox": {
+        "x1": 423,
+        "y1": 526,
+        "x2": 793,
+        "y2": 715
+      },
+      "yolo_confidence": 0.9517203569412231,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_001.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7710979,
+          "sku": "VIT-AIRMINERAL-200ML",
+          "name": "Vit Air Mineral Botol 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "sku": "VIT-AIRMINERAL-200ML",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7710979,
+            "sku": "VIT-AIRMINERAL-200ML",
+            "name": "Vit Air Mineral Botol 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "sku": "VIT-AIRMINERAL-200ML",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7710979,
+        "raw_top2_score": 0.39359295,
+        "margin": 0.37750495,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "VIT-AIRMINERAL-200ML",
+        "name": "Vit Air Mineral Botol 200ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_002",
+      "bbox": {
+        "x1": 430,
+        "y1": 334,
+        "x2": 802,
+        "y2": 531
+      },
+      "yolo_confidence": 0.9445210695266724,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_002.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8018476,
+          "sku": "VIT-AIRMINERAL-200ML",
+          "name": "Vit Air Mineral Botol 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "sku": "VIT-AIRMINERAL-200ML",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8018476,
+            "sku": "VIT-AIRMINERAL-200ML",
+            "name": "Vit Air Mineral Botol 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "sku": "VIT-AIRMINERAL-200ML",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8018476,
+        "raw_top2_score": 0.4326234,
+        "margin": 0.3692242,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "VIT-AIRMINERAL-200ML",
+        "name": "Vit Air Mineral Botol 200ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_003",
+      "bbox": {
+        "x1": 795,
+        "y1": 389,
+        "x2": 1078,
+        "y2": 610
+      },
+      "yolo_confidence": 0.9292110800743103,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_003.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7515092,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7515092,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7515092,
+        "raw_top2_score": 0.47542915,
+        "margin": 0.27608004999999997,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_004",
+      "bbox": {
+        "x1": 24,
+        "y1": 597,
+        "x2": 425,
+        "y2": 760
+      },
+      "yolo_confidence": 0.9261905550956726,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_004.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.41168302,
+          "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+          "name": "Sarimi Kaldu Ayam 70g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+            "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+            "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002",
+            "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002",
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+            "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.41168302,
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "name": "Sarimi Kaldu Ayam 70g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002",
+              "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002",
+              "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_002.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.39579168,
+            "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+            "name": "Indomie Kari Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+              "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.3877133,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.3826067,
+            "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+            "name": "Sarimi Kuah Rasa Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "point_key": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd:e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "matched_crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.png"
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.38059488,
+            "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+            "name": "Ultra Milk Caramel 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "point_key": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5:1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "sku": "fae1e1cf-e70f-5182-9f83-47e5af792cac",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5",
+              "matched_crop_id": "1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/1b0fe984f8857c48e0fd7ae6aef9a9f259de47f23101f08f6418e99efed579c5.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.41168302,
+        "raw_top2_score": 0.39579168,
+        "margin": 0.01589134000000003,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+        "name": "Sarimi Kaldu Ayam 70g",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_005",
+      "bbox": {
+        "x1": 29,
+        "y1": 756,
+        "x2": 424,
+        "y2": 915
+      },
+      "yolo_confidence": 0.9169821739196777,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_005.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.44802478,
+          "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+          "name": "Ultra Milk Susu UHT Mocca 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.44802478,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.44428217,
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "name": "Sarimi Kaldu Ayam 70g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.42730546,
+            "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+            "name": "Sarimi Kuah Rasa Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "point_key": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd:e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "matched_crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.png"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.40467894,
+            "sku": "e2187e24-8594-5430-b8f3-b6716a89a2ee",
+            "name": "Frestea Teh Melati 350ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0.json",
+              "image_id": "a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0",
+              "crop_id": "a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0_000",
+              "point_key": "a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0:a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0_000",
+              "sku": "e2187e24-8594-5430-b8f3-b6716a89a2ee",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0",
+              "matched_crop_id": "a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/a9279df85a3e3c10b040c977e50015c7cb2f7c28748fa278cf1f813fdffd13c0.png"
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.3995437,
+            "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+            "name": "Indomie Mi Goreng Ayam Geprek 90g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+              "image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+              "crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001",
+              "point_key": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c:ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001",
+              "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+              "matched_crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.44802478,
+        "raw_top2_score": 0.44428217,
+        "margin": 0.003742610000000035,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_006",
+      "bbox": {
+        "x1": 8,
+        "y1": 426,
+        "x2": 422,
+        "y2": 599
+      },
+      "yolo_confidence": 0.9140151739120483,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_006.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.46057364,
+          "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+          "name": "Sarimi Kaldu Ayam 70g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+            "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+            "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+            "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+            "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.46057364,
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "name": "Sarimi Kaldu Ayam 70g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.43494874,
+            "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+            "name": "Sarimi Kuah Rasa Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "point_key": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd:e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "matched_crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.46057364,
+        "raw_top2_score": 0.43494874,
+        "margin": 0.025624900000000006,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+        "name": "Sarimi Kaldu Ayam 70g",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_007",
+      "bbox": {
+        "x1": 787,
+        "y1": 608,
+        "x2": 1056,
+        "y2": 822
+      },
+      "yolo_confidence": 0.9067067503929138,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_007.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7773231,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7773231,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7773231,
+        "raw_top2_score": 0.48493233,
+        "margin": 0.29239077,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_008",
+      "bbox": {
+        "x1": 4,
+        "y1": 228,
+        "x2": 432,
+        "y2": 428
+      },
+      "yolo_confidence": 0.892003059387207,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_008.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.48749393,
+          "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+          "name": "Sarimi Kuah Rasa Ayam 75g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+            "image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+            "crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+            "point_key": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd:e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+            "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+            "matched_crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.48749393,
+            "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+            "name": "Sarimi Kuah Rasa Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "point_key": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd:e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "matched_crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.png"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.48124754,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.46459186,
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "name": "Sarimi Kaldu Ayam 70g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.46165803,
+            "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+            "name": "Indomie Mi Goreng Ayam Geprek 90g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+              "image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+              "crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001",
+              "point_key": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c:ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001",
+              "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+              "matched_crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_001.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.png"
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.45148668,
+            "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+            "name": "Indomie Kari Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+              "point_key": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8:9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+              "sku": "f1eb1479-a48c-58dd-9c65-4043e623fb33",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.jpg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8",
+              "matched_crop_id": "9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.jpg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8_007.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/9e65b253f0c1b4314798beae7326d3b246b050416f2973449d39111c082f16b8.jpg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.48749393,
+        "raw_top2_score": 0.48124754,
+        "margin": 0.006246390000000046,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+        "name": "Sarimi Kuah Rasa Ayam 75g",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_009",
+      "bbox": {
+        "x1": 434,
+        "y1": 891,
+        "x2": 789,
+        "y2": 1068
+      },
+      "yolo_confidence": 0.8833836913108826,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_009.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7800292,
+          "sku": "VIT-AIRMINERAL-200ML",
+          "name": "Vit Air Mineral Botol 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "sku": "VIT-AIRMINERAL-200ML",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7800292,
+            "sku": "VIT-AIRMINERAL-200ML",
+            "name": "Vit Air Mineral Botol 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "sku": "VIT-AIRMINERAL-200ML",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7800292,
+        "raw_top2_score": 0.446689,
+        "margin": 0.3333402,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "VIT-AIRMINERAL-200ML",
+        "name": "Vit Air Mineral Botol 200ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_010",
+      "bbox": {
+        "x1": 800,
+        "y1": 126,
+        "x2": 1079,
+        "y2": 390
+      },
+      "yolo_confidence": 0.877893328666687,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_010.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.7818103,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.7818103,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.7818103,
+        "raw_top2_score": 0.5028256,
+        "margin": 0.2789847,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_011",
+      "bbox": {
+        "x1": 785,
+        "y1": 821,
+        "x2": 1048,
+        "y2": 1025
+      },
+      "yolo_confidence": 0.8762674331665039,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_011.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.78312004,
+          "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+            "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.78312004,
+            "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "point_key": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3:0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3",
+              "matched_crop_id": "0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/0bc732ece0ff9128f00c3c7b20e3b4e537d53f15989bde48a3701a71e142b5d3.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.78312004,
+        "raw_top2_score": 0.50325465,
+        "margin": 0.27986539,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f5fba7e8-c05b-5d18-96e1-30d5042a3539",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_012",
+      "bbox": {
+        "x1": 433,
+        "y1": 124,
+        "x2": 815,
+        "y2": 341
+      },
+      "yolo_confidence": 0.8441885709762573,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_012.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8510434,
+          "sku": "VIT-AIRMINERAL-200ML",
+          "name": "Vit Air Mineral Botol 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "sku": "VIT-AIRMINERAL-200ML",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+            "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8510434,
+            "sku": "VIT-AIRMINERAL-200ML",
+            "name": "Vit Air Mineral Botol 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "point_key": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8:bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "sku": "VIT-AIRMINERAL-200ML",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8",
+              "matched_crop_id": "bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/bc263bcef460e701bee6e0de0cfe48078a6fa8b2b37e27875bdcd6bf582ac5d8.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8510434,
+        "raw_top2_score": 0.41429093,
+        "margin": 0.43675247,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "VIT-AIRMINERAL-200ML",
+        "name": "Vit Air Mineral Botol 200ml",
+        "status": "matched"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_013",
+      "bbox": {
+        "x1": 32,
+        "y1": 912,
+        "x2": 427,
+        "y2": 1071
+      },
+      "yolo_confidence": 0.8411241173744202,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_013.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.45464042,
+          "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+          "name": "Ultra Milk Susu UHT Mocca 200ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+            "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.45464042,
+            "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+            "name": "Ultra Milk Susu UHT Mocca 200ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "point_key": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7:f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7",
+              "matched_crop_id": "f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/f175e74d82f3ce03a19ca5201e58c9a26456a0c1ad703c0053d42ba07ce38af7.webp"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.4318966,
+            "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+            "name": "Sarimi Kaldu Ayam 70g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "point_key": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4:7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "sku": "680cede4-0969-565e-863b-c4ea3be6d3dc",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4",
+              "matched_crop_id": "7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4_003.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/7aa23cee10206549d5b706adb4132259e94fc74e92622783cac07778756f64c4.png"
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.43132922,
+            "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+            "name": "Sarimi Kuah Rasa Ayam 75g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "point_key": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd:e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "sku": "87186e1c-5940-593c-a2e8-2abb81eb52db",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd",
+              "matched_crop_id": "e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e342e02bdc3687b5c109309207737cb1e731b3a1297e67212c04f8efdd2522fd.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.45464042,
+        "raw_top2_score": 0.4318966,
+        "margin": 0.02274381999999997,
+        "review_flag": true,
+        "review_reason": "score_below_threshold,margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "b2c31f17-24a7-5277-90ff-b691472ff621",
+        "name": "Ultra Milk Susu UHT Mocca 200ml",
+        "status": "matched_review_flag"
+      }
+    },
+    {
+      "query_crop_id": "76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_014",
+      "bbox": {
+        "x1": 434,
+        "y1": 50,
+        "x2": 790,
+        "y2": 125
+      },
+      "yolo_confidence": 0.7118772864341736,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/test_mineral_76c5c0de/query_crops/76c5c0dee68944699123990a648cc5711f8d0d11ea0a0c1c0459a1b95980f76d_014.jpg",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.50180703,
+          "sku": "f73bcf5b-7c03-589e-8502-4f349839294a",
+          "name": "Aqua Air Mineral Botol 330ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58.json",
+            "image_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58",
+            "crop_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000",
+            "point_key": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58:e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000",
+            "sku": "f73bcf5b-7c03-589e-8502-4f349839294a",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58",
+            "matched_crop_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.50180703,
+            "sku": "f73bcf5b-7c03-589e-8502-4f349839294a",
+            "name": "Aqua Air Mineral Botol 330ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58.json",
+              "image_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58",
+              "crop_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000",
+              "point_key": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58:e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000",
+              "sku": "f73bcf5b-7c03-589e-8502-4f349839294a",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58",
+              "matched_crop_id": "e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e844e0bf89f8c170f459cbec263fd0cdde2cdb7496e16daf01aa012866716b58.png"
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.45299846,
+            "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+            "name": "Ultra Milk Stroberi 125ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+              "image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+              "crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002",
+              "point_key": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283:e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002",
+              "sku": "8881808b-7db6-5fa8-b9f5-f82d49625c34",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002.webp"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283",
+              "matched_crop_id": "e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002.webp",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283_002.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/e347c6d8b0ca9f819bdc83ee3f66c7c32c7ca476f83563f365aca4f525d17283.webp"
+            }
+          }
+        ],
+        "raw_top1_score": 0.50180703,
+        "raw_top2_score": 0.45299846,
+        "margin": 0.04880857000000005,
+        "review_flag": true,
+        "review_reason": "margin_below_threshold",
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "f73bcf5b-7c03-589e-8502-4f349839294a",
+        "name": "Aqua Air Mineral Botol 330ml",
+        "status": "matched_review_flag"
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/image_test_indomie.png",
+    "query_image_sha256": "341aa20fd89565d244ed713e2db1dcb48d6d4272195b0dbf081be85f66cbab11",
+    "width": 2004,
+    "height": 1240,
+    "processed_at": "2026-02-26T05:10:25.791384+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.5,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "name",
+    "yolo_min_confidence": 0.6
+  },
+  "summary": {
+    "box_count": 1,
+    "filtered_out_low_conf_count": 3,
+    "matched_box_count": 1,
+    "review_flag_count": 0,
+    "variant_count": 1,
+    "variant_counts": [
+      {
+        "variant_key": "indomie mi goreng ayam geprek 90g",
+        "name": "Indomie Mi Goreng Ayam Geprek 90g",
+        "count": 1,
+        "sku_ids": [
+          "c9b938b9-ec45-534f-9021-c0e03547e906"
+        ]
+      }
+    ],
+    "sku_counts": [
+      {
+        "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+        "name": "Indomie Mi Goreng Ayam Geprek 90g",
+        "count": 1
+      }
+    ]
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_indomie_341aa20f/query_annotated.png",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_indomie_341aa20f/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_indomie_341aa20f/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": [
+    {
+      "query_crop_id": "341aa20fd89565d244ed713e2db1dcb48d6d4272195b0dbf081be85f66cbab11_000",
+      "bbox": {
+        "x1": 17,
+        "y1": 5,
+        "x2": 1956,
+        "y2": 1240
+      },
+      "yolo_confidence": 0.8212988972663879,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_indomie_341aa20f/query_crops/341aa20fd89565d244ed713e2db1dcb48d6d4272195b0dbf081be85f66cbab11_000.png",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.76395845,
+          "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+          "name": "Indomie Mi Goreng Ayam Geprek 90g",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+            "image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+            "crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000",
+            "point_key": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c:ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000",
+            "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000.png"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+            "matched_crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000.png",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.png"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.76395845,
+            "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+            "name": "Indomie Mi Goreng Ayam Geprek 90g",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+              "image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+              "crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000",
+              "point_key": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c:ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000",
+              "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000.png"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c",
+              "matched_crop_id": "ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000.png",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/ae7414ff7e6e73dfc888bf0ffefe2d1ac4e6a4f5605688ea07a44cf34810fd9c.png"
+            }
+          }
+        ],
+        "raw_top1_score": 0.76395845,
+        "raw_top2_score": 0.68352187,
+        "margin": 0.08043657999999998,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "c9b938b9-ec45-534f-9021-c0e03547e906",
+        "name": "Indomie Mi Goreng Ayam Geprek 90g",
+        "status": "matched"
+      }
+    }
+  ]
+}

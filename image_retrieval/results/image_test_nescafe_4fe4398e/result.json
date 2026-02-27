@@ -1,0 +1,133 @@
+{
+  "query": {
+    "query_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/image_input/image_test_nescafe.png",
+    "query_image_sha256": "4fe4398efa6f4eee399f93722b18f9fa834c8e0ff56e45b3715eae8fa551e559",
+    "width": 1657,
+    "height": 684,
+    "processed_at": "2026-02-26T02:32:42.976462+00:00"
+  },
+  "pipeline": {
+    "version": "0.1.0",
+    "detector_backend": "ultralytics",
+    "retrieval_backend": "clip_qdrant",
+    "status": "ok",
+    "errors": []
+  },
+  "thresholds": {
+    "score_threshold": 0.78,
+    "margin_threshold": 0.05,
+    "candidate_delta": 0.05,
+    "top_k_requested": 5,
+    "dedupe_by": "name",
+    "yolo_min_confidence": 0.5
+  },
+  "summary": {
+    "box_count": 1,
+    "filtered_out_low_conf_count": 2,
+    "matched_box_count": 1,
+    "review_flag_count": 0,
+    "variant_count": 1,
+    "variant_counts": [
+      {
+        "variant_key": "nescafe kaleng latte 220ml",
+        "name": "Nescafe Kaleng Latte 220ml",
+        "count": 1,
+        "sku_ids": [
+          "b1ce3e4e-34fe-57ae-aab1-24fb54099e60"
+        ]
+      }
+    ],
+    "sku_counts": [
+      {
+        "sku": "b1ce3e4e-34fe-57ae-aab1-24fb54099e60",
+        "name": "Nescafe Kaleng Latte 220ml",
+        "count": 1
+      }
+    ]
+  },
+  "artifacts": {
+    "query_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_nescafe_4fe4398e/query_annotated.png",
+    "query_crop_dir": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_nescafe_4fe4398e/query_crops",
+    "result_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_nescafe_4fe4398e/result.json",
+    "rendered_query_annotation": true
+  },
+  "detections": [
+    {
+      "query_crop_id": "4fe4398efa6f4eee399f93722b18f9fa834c8e0ff56e45b3715eae8fa551e559_000",
+      "bbox": {
+        "x1": 25,
+        "y1": 32,
+        "x2": 1651,
+        "y2": 682
+      },
+      "yolo_confidence": 0.7370638251304626,
+      "yolo_class": "box",
+      "query_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/image_retrieval/results/image_test_nescafe_4fe4398e/query_crops/4fe4398efa6f4eee399f93722b18f9fa834c8e0ff56e45b3715eae8fa551e559_000.png",
+      "retrieval": {
+        "top1": {
+          "rank": 1,
+          "score": 0.8203659,
+          "sku": "b1ce3e4e-34fe-57ae-aab1-24fb54099e60",
+          "name": "Nescafe Kaleng Latte 220ml",
+          "payload": {
+            "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.json",
+            "image_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b",
+            "crop_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000",
+            "point_key": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b:097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000",
+            "sku": "b1ce3e4e-34fe-57ae-aab1-24fb54099e60",
+            "clip_model": "ViT-B-32",
+            "clip_pretrained": "laion2b_s34b_b79k",
+            "clip_device": "cpu",
+            "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000.jpeg"
+          },
+          "matched_artifacts": {
+            "matched_image_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b",
+            "matched_crop_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000",
+            "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000.jpeg",
+            "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000.json",
+            "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.json",
+            "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.jpeg"
+          }
+        },
+        "top_k_candidates": [
+          {
+            "rank": 1,
+            "score": 0.8203659,
+            "sku": "b1ce3e4e-34fe-57ae-aab1-24fb54099e60",
+            "name": "Nescafe Kaleng Latte 220ml",
+            "payload": {
+              "output_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.json",
+              "image_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b",
+              "crop_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000",
+              "point_key": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b:097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000",
+              "sku": "b1ce3e4e-34fe-57ae-aab1-24fb54099e60",
+              "clip_model": "ViT-B-32",
+              "clip_pretrained": "laion2b_s34b_b79k",
+              "clip_device": "cpu",
+              "crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000.jpeg"
+            },
+            "matched_artifacts": {
+              "matched_image_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b",
+              "matched_crop_id": "097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000",
+              "matched_crop_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/cropped/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000.jpeg",
+              "matched_crop_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/crops/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b_000.json",
+              "matched_image_json_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/json/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.json",
+              "matched_annotated_image_path": "/home/muhamad-daffa-azfa-rabbani/Public/Hackathon/test_yolo/output/img/097dade01d40ac9e5ad3df9b179dc1bc10df464aa696ebbc8234e40050d6864b.jpeg"
+            }
+          }
+        ],
+        "raw_top1_score": 0.8203659,
+        "raw_top2_score": 0.6353922,
+        "margin": 0.18497370000000002,
+        "review_flag": false,
+        "review_reason": null,
+        "raw_hits_considered": 25
+      },
+      "assignment": {
+        "sku": "b1ce3e4e-34fe-57ae-aab1-24fb54099e60",
+        "name": "Nescafe Kaleng Latte 220ml",
+        "status": "matched"
+      }
+    }
+  ]
+}
